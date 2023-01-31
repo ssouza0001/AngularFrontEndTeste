@@ -1,0 +1,21 @@
+<div class="col">
+  <div class="card card-boddy rounded-0">
+    <div class="px-3 h6" style="margin-top: 5%">
+      <strong> Situação cadastral do CPF </strong>
+    </div>
+    <p class="px-3 text-secondary">
+      <small>Situação cadastral do CPF</small>
+    </p>
+    <div class="px-3">
+      <i class="bi bi-person-fill text-secondary"></i
+      ><small class="text-secondary px-2">Nome</small><br />
+      <div class="px-4">{{ cooperado?.situacao.nome }}</div>
+    </div>
+    <div class="p-3">
+      <i class="bi bi-check-circle text-success"></i
+      ><small class="text-secondary px-1"> Situação do CPF</small>
+      <br />
+      <div class="px-4">{{ cooperado?.situacao.statusSituacao }}</div>
+    </div>
+  </div>
+</div>

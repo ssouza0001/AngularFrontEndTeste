@@ -1,0 +1,14 @@
+[{
+	"id": 1,
+	"cpf": "11122233344",
+	"situacao": {
+		"nome": "Mariane de Sousa Oliveira",
+		"statusSituacao": "Ativa"
+	},
+	"contaAplicacao": {
+		"numeroConta": "557932-4"
+	},
+	"contaCorrente": {
+		"numeroContaCorrente": "778461-8"
+	}
+}]

@@ -1,0 +1,9 @@
+.btnCor {
+  background-color: #165C7D;
+  color: white !important;
+}
+.btnCorInvertido {
+  background-color: white !important;
+  color:#165C7D;
+}
+

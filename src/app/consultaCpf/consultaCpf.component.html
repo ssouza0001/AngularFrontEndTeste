@@ -1,0 +1,54 @@
+<div class="container-fluid p-3" style="margin-top: 5%">
+  <app-step></app-step>
+  <p class="text-bold h5">Informe o CPF do futuro cooperado (a)</p>
+  <small>
+    Se necessário, você poderá duplicar uma conta existente ou pausar e retornar
+    esse cadastro futuramente. </small
+  ><br />
+  <small>Digite apenas os números (sem pontos ou traços).</small><br />
+  <label class="text-bold h5 pl-2" for="cpf">CPF</label>
+  <form class="row gy-2 gx-3 align-items-center needs-validation" novalidate>
+    <div class="col-md-4">
+      <div class="form-outline">
+        <input
+          [(ngModel)]="cpf"
+          name="cpf"
+          type="text"
+          id="cpf"
+          class="form-control rounded-0"
+          placeholder="000.000.000-00"
+          required
+          maxlength="14"
+          mask="000.000.000-00"
+        />
+      </div>
+    </div>
+    <div class="col-auto">
+      <button
+        type="submit"
+        class="btn btnCor border text-white rounded-0"
+        [disabled]="cpf.length < 11"
+        (click)="getCPF()"
+      >
+        Consultar por CPF
+      </button>
+    </div>
+  </form>
+
+  <div class="row gx-6 py-5 mb-5" *ngIf="cooperado">
+    <div class="col">
+      <app-situacao-cadastral
+        [(cooperado)]="cooperado"
+      ></app-situacao-cadastral>
+    </div>
+    <div class="col">
+      <app-conta-aplicacao [(cooperado)]="cooperado"></app-conta-aplicacao>
+    </div>
+    <div class="col">
+      <app-conta-corrente [(cooperado)]="cooperado"></app-conta-corrente>
+    </div>
+  </div>
+
+  <app-modal></app-modal>
+</div>
+<app-footer [(possuiCooperado)]="possuiCooperado"></app-footer>

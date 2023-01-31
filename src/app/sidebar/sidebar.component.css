@@ -1,0 +1,41 @@
+.bgCiza {
+  background-color: rgba(208, 222, 229, 0.5) !important;
+}
+
+.bgCor {
+  background-color: #165C7D;
+}
+
+li.active{
+  background-color: #428bca;
+}
+li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.sidebar{
+  background-color: #165C7D;
+  padding-right: 10px;
+  padding-top: 20px;
+  min-height: calc(107vh - 50px);
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+button{
+  color: #fafafa
+}

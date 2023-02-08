@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
-declare var jQuery:any;
+declare var jQuery: any;
+
 
 @Component({
   selector: 'app-modal',
@@ -9,7 +10,7 @@ declare var jQuery:any;
 })
 export class ModalComponent {
 
-  @ViewChild('modal',{static: true}) modal:ElementRef;
+  @ViewChild('modal',{static: false}) modal:ElementRef;
 
   showModal() {
     jQuery(this.modal.nativeElement).modal('show');
